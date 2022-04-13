@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVBAR</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navb">
-            <ul>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="logo.jpg" alt="Logo" />
-                    </a>     
-                </div>
-                <div>
-                    <a href="#" title="Home">Home</a>
-                <div>
-                    <a href="#" title="Link">About</a>
-                </div>              
+    <div class="navbar">
+        <div class="logo">
+            Navbar
+        </div>
+        <div class="nav">
+            <div class="flex-left">
+                <div class="buttons">
+                    <div><a class="navigation" href="#Home">Home</a></div>
+                    <div><a class="navigation" href="Link">Link</a></div>
                     <div class="dropdown">
-                        <button class="buttondrp">Dropdown</button>
-                            <div class="drp-content">
-                                <a href="#" title="Link1">Link1</a>
-                                <a href="#" title="Link2">Link2</a>
-                                <a href="#" title="Link3">Link3</a>
-                            </div>
+                        <button class="dropbtn">
+                            Dropdown
+                            <i class="fa fa-caret-down">▼</i>
+                        </button>
                     </div>
-                <li>
-                    <div class="search">
-                        <form action="/action_page.php">
-                            <input type="text" placeholder="Search...">
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <a class="navigation" href="Disabled">Disabled</a>
+                </div>
+            </div>
+
+            <div class="flex-right">
+                <div class="search">
+                    <input type="search" class="white-box" placeholder=" Search">
+                </div>
+                <div class="button-search">
+                    <button class="btn-search">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hamb-flex">
+            <div class="hamb-menu">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
